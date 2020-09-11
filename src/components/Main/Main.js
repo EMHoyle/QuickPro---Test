@@ -29,6 +29,7 @@ const menuItems = [
     {
       listIcon: <DashboardIcon></DashboardIcon>,
       listText: "Dashboard",
+      listPath: "/dashboard"
     },
     {
       listIcon: <LibraryBooksIcon></LibraryBooksIcon>,
