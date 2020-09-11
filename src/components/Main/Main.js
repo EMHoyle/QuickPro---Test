@@ -1,6 +1,7 @@
 import React from 'react';
 import clsx from 'clsx';
 import { useTheme } from '@material-ui/core/styles';
+import { useHistory } from 'react-router-dom';
 import Drawer from '@material-ui/core/Drawer';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
@@ -23,21 +24,20 @@ const menuItems = [
     {
       listIcon: <HomeWorkIcon></HomeWorkIcon>,
       listText: "Home",
-      //listPath: "/home"
+      listPath: "/home"
     },
     {
       listIcon: <DashboardIcon></DashboardIcon>,
       listText: "Dashboard",
-      //listPath: "/dashboard"
     },
     {
       listIcon: <LibraryBooksIcon></LibraryBooksIcon>,
       listText: "Órdenes",
-      //listPath: "/ordenes"
     }
 ];
 
 const Container = () => {
+  const history = useHistory();
   const classes = MStyles();
   const theme = useTheme();
   const [open, setOpen] = React.useState(false);
@@ -71,7 +71,7 @@ const Container = () => {
             <MenuIcon />
           </IconButton>
           <Typography className={classes.typo} variant="h6" noWrap>
-            QuickPro Dashboard
+            QuickOrders Dashboard
           </Typography>
         </Toolbar>
       </AppBar>
@@ -100,7 +100,7 @@ const Container = () => {
               button
               className={classes.list}
               key={key}
-            //   onClick={() => history.push(lsItem.listPath)}
+              onClick={() => history.push(lsItem.listPath)}
             >
               <ListItemIcon className={classes.icons}>
                 {lsItem.listIcon}
