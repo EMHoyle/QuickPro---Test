@@ -2,15 +2,15 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Switch,} from 'react-router-dom';
 import Container from './components/Main/Main';
 import Home from './components/Home/Home';
-import Dashboard from './components/Dashboard/Dashboard';
+import Ordenes from './components/Ordenes/Ordenes';
 
 function App() {
   return (
     <Router>
       <div>
         <Switch>
-          <Route path="/home"><Container></Container><Home></Home></Route>
-          <Route path="/dashboard"><Container></Container><Dashboard></Dashboard></Route>
+          <Route exact path="/"><Container></Container><Home></Home></Route>
+          <Route path="/ordenes"><Container></Container><Ordenes></Ordenes></Route>
         </Switch>
       </div>
     </Router>

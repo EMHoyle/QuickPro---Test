@@ -16,7 +16,6 @@ import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import HomeWorkIcon from '@material-ui/icons/HomeWork';
-import DashboardIcon from '@material-ui/icons/Dashboard';
 import LibraryBooksIcon from '@material-ui/icons/LibraryBooks';
 import MStyles from './MStyles';
 
@@ -24,16 +23,12 @@ const menuItems = [
     {
       listIcon: <HomeWorkIcon></HomeWorkIcon>,
       listText: "Home",
-      listPath: "/home"
-    },
-    {
-      listIcon: <DashboardIcon></DashboardIcon>,
-      listText: "Dashboard",
-      listPath: "/dashboard"
+      listPath: "/"
     },
     {
       listIcon: <LibraryBooksIcon></LibraryBooksIcon>,
       listText: "Órdenes",
+      listPath: "/ordenes"
     }
 ];
 
