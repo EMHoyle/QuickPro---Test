@@ -1,11 +1,6 @@
 import { makeStyles } from "@material-ui/core/styles";
 
-const OCStyles = makeStyles((theme) => ({
-  root: {
-      width: '90%',
-      marginLeft: '7rem',
-      marginTop: '7rem'
-  },
+const MStyles = makeStyles((theme) => ({
   modal: {
     position: 'absolute',
     width: '400px',
@@ -25,4 +20,5 @@ const OCStyles = makeStyles((theme) => ({
   }
 }));
 
-export default OCStyles;
+export default MStyles;
+
